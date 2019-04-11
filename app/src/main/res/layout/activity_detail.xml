@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:src="@drawable/defaultimage"
+    android:scaleType="centerCrop"
+    android:id="@+id/imagedetail"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagedetail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="8dp"
+        android:id="@+id/detailtitle"
+        android:text="News Title that will show up here"
+        android:textColor="#000"
+        android:textSize="27sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailtitle"
+        android:paddingLeft="8dp"
+        android:id="@+id/authordetail"
+        android:text="Author"
+        android:textColor="@color/darker_grey"
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authordetail"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+
+        android:id="@+id/publishedat"
+        android:text="time"
+        android:textColor="@color/grey"
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="content or description of the news will show up here as the news is clisked lafnal adlnksdn al kaflkj djskflksdjkfj kjslflksdjlfdksjfsldfl kj  kdjfs  jskdfs kj kdsf kjkjsdf d jkjsdfdksj "
+        android:id="@+id/contentdetail"
+        android:layout_below="@+id/publishedat"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentdetail"
+        android:weightSum="2">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Visit Link"
+        android:id="@+id/linkbutton"
+        android:background="@color/refresh6"
+        />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Share"
+            android:id="@+id/sharebutton"
+            android:background="@color/refresh7"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
